@@ -15,6 +15,8 @@
 | 잉크애니 | [잉크애니.md](skills/nokryong-art-style/styles/잉크애니.md) |
 | 치비애니 | [치비애니.md](skills/nokryong-art-style/styles/치비애니.md) |
 | 흑백망가 | [흑백망가.md](skills/nokryong-art-style/styles/흑백망가.md) |
+| 일상웹툰 | [일상웹툰.md](skills/nokryong-art-style/styles/일상웹툰.md) |
+| 카툰애니 | [카툰애니.md](skills/nokryong-art-style/styles/카툰애니.md) |
 
 
 ## 작동 방식
@@ -75,7 +77,9 @@ cp -R nokryong-image-styles/skills/nokryong-art-style ~/.agents/skills/
             ├── 인디망가.md
             ├── 잉크애니.md
             ├── 치비애니.md
-            └── 흑백망가.md
+            ├── 흑백망가.md
+            ├── 일상웹툰.md
+            └── 카툰애니.md
 ```
 
 원본 프롬프트 무결성 확인:
@@ -91,7 +95,7 @@ python scripts/verify.py
 | 대상 | 라이선스 |
 | --- | --- |
 | 스킬 및 소프트웨어 구성요소(`SKILL.md`, `plugin.json`, `scripts/` 등) | [MIT](LICENSE) |
-| `skills/nokryong-art-style/styles/*.md` 원본 화풍 프롬프트 5개 | [CC BY 4.0](skills/nokryong-art-style/styles/LICENSE) |
+| `skills/nokryong-art-style/styles/*.md` 원본 화풍 프롬프트 7개 | [CC BY 4.0](skills/nokryong-art-style/styles/LICENSE) |
 
 화풍 프롬프트를 재배포하거나 수정본을 공유할 때에는 원저작자 **nokryong**과 원본 출처, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 라이선스를 표시하고 변경 여부를 밝혀야 합니다. 두 라이선스 모두 상업적 이용을 허용합니다.
 

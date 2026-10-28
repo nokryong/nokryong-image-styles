@@ -1,11 +1,11 @@
 ---
 name: nokryong-art-style
-description: "Use this skill when creating, editing, comparing, or choosing images in the user-authored 녹용화풍 art styles: 아마추어웹툰, 인디망가, 잉크애니, 치비애니, 흑백망가. Before generating, read the entire original Markdown source for the requested style. The art-style source takes priority over generic defaults and illustrative references."
+description: "Use this skill when creating, editing, comparing, or choosing images in the user-authored 녹용화풍 art styles: 아마추어웹툰, 인디망가, 잉크애니, 치비애니, 흑백망가, 일상웹툰, 카툰애니. Before generating, read the entire original Markdown source for the requested style. The art-style source takes priority over generic defaults and illustrative references."
 ---
 
 # 녹용화풍 — original-source art style selector
 
-This skill includes **exactly five unmodified source style prompts**. The bundled Markdown files, not this overview, determine the image's rendering. Select styles using the exact registry below and apply their full source documents.
+This skill includes **exactly seven unmodified source style prompts**. The bundled Markdown files, not this overview, determine the image's rendering. Select styles using the exact registry below and apply their full source documents.
 
 ## Available styles — exact registry
 
@@ -16,6 +16,8 @@ This skill includes **exactly five unmodified source style prompts**. The bundle
 | 잉크애니 | `styles/잉크애니.md` |
 | 치비애니 | `styles/치비애니.md` |
 | 흑백망가 | `styles/흑백망가.md` |
+| 일상웹툰 | `styles/일상웹툰.md` |
+| 카툰애니 | `styles/카툰애니.md` |
 
 Use only styles in this registry, and never substitute a different style for the one the user requested.
 
@@ -30,10 +32,10 @@ Use only styles in this registry, and never substitute a different style for the
 
 ## Other requests
 
-- **List styles:** list exactly the five registry names and do not invent others.
+- **List styles:** list exactly the seven registry names and do not invent others.
 - **Choose for me:** select one of the five based on the user's specific request, then read its entire source before generating; report which style was chosen. If selection is genuinely ambiguous, ask for the style name.
 - **Multiple styles for different images:** load each corresponding source separately; do not mix styles unless explicitly instructed.
 - **Character requests:** preserve the user's character descriptions and references; do not invent identity details or let them change the selected style's rendering rules.
 - **Provenance questions:** report the exact local filename that was read, and never claim a file was loaded if it was not.
 
-The five original style documents are included byte-for-byte and should not be edited or silently replaced during routine use.
+The seven original style documents are included byte-for-byte and should not be edited or silently replaced during routine use.
