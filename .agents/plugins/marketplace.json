@@ -1,0 +1,26 @@
+{
+  "name": "nokryong-art-styles",
+  "interface": {
+    "displayName": "녹용화풍"
+  },
+  "plugins": [
+    {
+      "name": "nokryong-image-styles",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/nokryong/nokryong-image-styles.git",
+        "ref": "main"
+      },
+      "interface": {
+        "displayName": "녹용화풍",
+        "shortDescription": "원본 화풍 5종을 정확히 선택",
+        "developerName": "nokryong"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
