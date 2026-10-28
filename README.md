@@ -1,43 +1,97 @@
-# 녹용화풍 (Nokryong Art Styles)
+# 녹용화풍
 
-**녹용화풍**은 다섯 가지 원본 화풍 프롬프트를 이름으로 선택해 이미지 생성·수정에 활용하는 스킬과 개인용 플러그인입니다.
+**녹용화풍 (Nokryong Image Styles)**은 이미지 생성 작업에서 화풍 이름에 맞는 **원본 Markdown 프롬프트를 정확하게 불러오기 위한 스킬 라이브러리**입니다.
 
-## 포함된 화풍 (5종)
+화풍을 막연히 추측하거나 다른 스타일로 치환하지 않고, 각 화풍의 원문을 읽어 이미지 생성 지침에 적용하도록 설계했습니다.
 
-- 아마추어 웹툰 (`아마추어웹툰.md`)
-- 인디망가 (`인디망가.md`)
-- 잉크애니 (`잉크애니.md`)
-- 치비애니 (`치비애니.md`)
-- 흑백망가 (`흑백망가.md`)
+## 수록 화풍
 
-**다른 화풍이나 캐릭터 프롬프트는 포함되어 있지 않습니다.** 다섯 화풍 원본은 Google Drive에서 가져온 그대로 저장되어 있습니다.
+| 화풍 | 원본 프롬프트 |
+| --- | --- |
+| 아마추어 웹툰 | [아마추어웹툰.md](skills/nokryong-art-style/styles/아마추어웹툰.md) |
+| 인디망가 | [인디망가.md](skills/nokryong-art-style/styles/인디망가.md) |
+| 잉크애니 | [잉크애니.md](skills/nokryong-art-style/styles/잉크애니.md) |
+| 치비애니 | [치비애니.md](skills/nokryong-art-style/styles/치비애니.md) |
+| 흑백망가 | [흑백망가.md](skills/nokryong-art-style/styles/흑백망가.md) |
+
+캐릭터 프롬프트는 포함하지 않습니다.
+
+## 작동 방식
+
+1. 사용자 요청에서 화풍 이름을 확인합니다.
+2. 해당 화풍의 `.md` 파일 **전체**를 불러옵니다.
+3. 원본 화풍 규칙은 변경하지 않고, 인물·배경·행동·구도 등의 요청을 별도로 결합합니다.
+4. 이미지 생성·수정 시 원본 화풍의 선, 채색, 명암, 비례, 표현 밀도 등의 조건을 우선 적용합니다.
+
+스킬은 프롬프트 선택·적용 과정을 정의합니다. 실제 이미지 결과는 사용하는 생성 모델에 따라 달라질 수 있습니다.
+
+## 설치
+
+### Codex 등 스킬을 지원하는 에이전트
+
+저장소를 복제한 후 `skills/nokryong-art-style` 폴더를 해당 에이전트의 스킬 디렉터리에 복사합니다.
+
+```bash
+git clone https://github.com/nokryong/nokryong-image-styles.git
+```
+
+Codex에서 개인 스킬 디렉터리 `~/.agents/skills/`를 사용하는 경우:
+
+```bash
+mkdir -p ~/.agents/skills
+cp -R nokryong-image-styles/skills/nokryong-art-style ~/.agents/skills/
+```
+
+### 플러그인 패키지
+
+`plugin.json`과 `skills/` 디렉터리를 포함한 저장소 구조를 사용합니다. 사용 중인 ChatGPT 환경이 개인 플러그인 등록을 지원하는 경우 패키지로 등록할 수 있습니다. GitHub 저장소를 복제하는 것만으로 ChatGPT에 자동 설치되지는 않습니다.
 
 ## 사용 예시
 
-- `인디망가 화풍으로 빗속의 버스정류장에 앉아 있는 사람을 그려줘.`
-- `치비애니로 도서관에서 공부하는 마법사를 그려줘.`
-- `녹용화풍에서 사용 가능한 화풍을 알려줘.`
-
-스킬의 핵심은 이름만 보고 화풍을 추측하지 않고 **정확한 Markdown 원문 전체를 읽은 다음 적용하는 것**입니다. 이미지 생성 모델의 최종 결과가 모든 스타일 조건을 완벽히 재현한다는 보장은 없습니다.
-
-## 파일 구성
-
 ```text
-plugin.json                         # 플러그인 매니페스트 (표시 이름: 녹용화풍)
-skills/nokryong-art-style/
-  SKILL.md                          # 화풍 선택 및 적용 규칙
-  agents/openai.yaml                # 스킬 표시 이름 및 호출 설정
-  styles/                           # 수정하지 않은 5개 화풍 원본
-scripts/verify.py                   # 원본 SHA-256 무결성 검사
+인디망가 화풍으로 비 내리는 밤거리의 우체통을 그려줘.
+치비애니로 마법서를 들고 달리는 모험가를 그려줘.
+녹용화풍에서 사용할 수 있는 화풍 목록을 알려줘.
 ```
 
-## 설치 및 개발
+## 저장소 구조
 
-- **독립형 스킬**: `skills/nokryong-art-style` 폴더를 사용하는 클라이언트의 스킬 경로에 배치하세요.
-- **ChatGPT 개인 플러그인**: 매니페스트와 스킬을 함께 ZIP으로 묶어, 해당 계정에서 지원하는 플러그인 등록 절차를 이용하세요. GitHub 저장소 공개만으로 ChatGPT에 자동 설치되지는 않습니다.
-- **수정**: `SKILL.md`는 작업 규칙, `styles/*.md`는 각각의 원본 화풍입니다. 원본 변경 시 별도 버전으로 관리하세요.
-- **검증**: `python scripts/verify.py`를 실행하면 포함한 원본 5개가 고정된 SHA-256 값과 일치하는지 확인할 수 있습니다.
+```text
+.
+├── README.md
+├── LICENSE                         # MIT: 스킬 및 소프트웨어 구성요소
+├── plugin.json
+├── scripts/
+│   └── verify.py                   # 원본 화풍 파일 SHA-256 검사
+└── skills/
+    └── nokryong-art-style/
+        ├── SKILL.md                # 화풍 선택·적용 절차
+        ├── agents/
+        │   └── openai.yaml
+        └── styles/
+            ├── LICENSE             # CC BY 4.0: 원본 화풍 프롬프트
+            ├── 아마추어웹툰.md
+            ├── 인디망가.md
+            ├── 잉크애니.md
+            ├── 치비애니.md
+            └── 흑백망가.md
+```
+
+원본 프롬프트 무결성 확인:
+
+```bash
+python scripts/verify.py
+```
 
 ## 라이선스
 
-**현재 라이선스가 지정되지 않았습니다.** 공개 저장소로 열람할 수는 있지만, 공개만으로 수정·재배포·상업적 이용이 자유롭게 허가되는 것은 아닙니다. 라이선스는 추후 결정할 예정입니다.
+이 저장소는 구성요소에 따라 라이선스가 다르게 적용됩니다.
+
+| 대상 | 라이선스 |
+| --- | --- |
+| 스킬 및 소프트웨어 구성요소(`SKILL.md`, `plugin.json`, `scripts/` 등) | [MIT](LICENSE) |
+| `skills/nokryong-art-style/styles/*.md` 원본 화풍 프롬프트 5개 | [CC BY 4.0](skills/nokryong-art-style/styles/LICENSE) |
+
+화풍 프롬프트를 재배포하거나 수정본을 공유할 때에는 원저작자 **nokryong**과 원본 출처, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 라이선스를 표시하고 변경 여부를 밝혀야 합니다. 두 라이선스 모두 상업적 이용을 허용합니다.
+
+이 라이선스 구분은 **프롬프트 문서의 이용 조건**을 설명하며, 이를 사용해 생성한 모든 이미지에 동일한 저작자 표시 의무가 자동으로 적용된다는 의미는 아닙니다.
