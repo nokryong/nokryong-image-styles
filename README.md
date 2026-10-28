@@ -1,5 +1,7 @@
 # 녹용화풍
 
+[화풍 예시 갤러리](https://nokryong-style-room.tunedpike66.chatgpt.site/)
+
 **녹용화풍 (Nokryong Image Styles)**은 이미지 생성 작업에서 화풍 이름에 맞는 **원본 Markdown 프롬프트를 정확하게 불러오기 위한 스킬 라이브러리**입니다.
 
 화풍을 막연히 추측하거나 다른 스타일로 치환하지 않고, 각 화풍의 원문을 읽어 이미지 생성 지침에 적용하도록 설계했습니다.
