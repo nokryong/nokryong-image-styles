@@ -12,6 +12,7 @@ EXPECTED={
     '흑백망가.md': 'a74398f56857d0017791e1233581ff3bd3272fd7a28b32575695ef6a0496e19a',
     '일상웹툰.md': 'c3b12cfcfa298d2efab90c5f42f87c53da8bab550b5f8de91a7ac6ebf7425a33',
     '카툰애니.md': '66c00119583a4d58aa8d999f724063ecd5166ba41f9a67861ac187f98b574515',
+    '팬아트애니.md': 'c3b02ae2159f3b66bfed2887eb43bc1897187992a2f6b7db3dd9e44a75656027',
 }
 actual={p.name for p in STYLE_DIR.glob("*.md")}
 assert actual==set(EXPECTED), (actual, set(EXPECTED))
