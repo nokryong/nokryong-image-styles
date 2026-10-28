@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "nokryong-image-styles",
   "version": "0.2.0",
-  "description": "Five original Korean art-style prompts with an exact-source image generation skill. Character prompts excluded.",
+  "description": "Five original art-style prompts with an exact-source image generation skill.",
   "author": {
     "name": "nokryong"
   },
@@ -11,7 +11,7 @@
       "interface": {
         "displayName": "녹용화풍",
         "shortDescription": "원본 화풍 5종을 정확히 선택",
-        "longDescription": "사용자가 지정한 다섯 가지 화풍 중 해당 원본 Markdown 문서를 읽고 시각 표현 규칙을 우선 적용하는 이미지 생성 스킬입니다. 캐릭터 프롬프트는 포함하지 않습니다.",
+        "longDescription": "사용자가 지정한 다섯 가지 화풍 중 해당 원본 Markdown 문서를 읽고 시각 표현 규칙을 우선 적용하는 이미지 생성 스킬입니다.",
         "developerName": "nokryong",
         "category": "Productivity",
         "capabilities": [],

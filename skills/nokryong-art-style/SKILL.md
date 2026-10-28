@@ -5,7 +5,7 @@ description: "Use this skill when creating, editing, comparing, or choosing imag
 
 # 녹용화풍 — original-source art style selector
 
-This skill includes **exactly five unmodified source style prompts**. The bundled Markdown files, not this overview, determine the image's rendering. This skill does **not** include character definitions, any other art styles, or any automatic Google Drive sync.
+This skill includes **exactly five unmodified source style prompts**. The bundled Markdown files, not this overview, determine the image's rendering. Select styles using the exact registry below and apply their full source documents.
 
 ## Available styles — exact registry
 
@@ -17,7 +17,7 @@ This skill includes **exactly five unmodified source style prompts**. The bundle
 | 치비애니 | `styles/치비애니.md` |
 | 흑백망가 | `styles/흑백망가.md` |
 
-No other style prompt is bundled. In particular, do not silently substitute excluded styles or claim to have their source documents.
+Use only styles in this registry, and never substitute a different style for the one the user requested.
 
 ## Required workflow for generation and editing
 
@@ -33,7 +33,7 @@ No other style prompt is bundled. In particular, do not silently substitute excl
 - **List styles:** list exactly the five registry names and do not invent others.
 - **Choose for me:** select one of the five based on the user's specific request, then read its entire source before generating; report which style was chosen. If selection is genuinely ambiguous, ask for the style name.
 - **Multiple styles for different images:** load each corresponding source separately; do not mix styles unless explicitly instructed.
-- **Character requests:** this package has no character prompt collection. Do not fabricate one; use only user-provided references, explicit instructions, or independently available sources as appropriate.
+- **Character requests:** preserve the user's character descriptions and references; do not invent identity details or let them change the selected style's rendering rules.
 - **Provenance questions:** report the exact local filename that was read, and never claim a file was loaded if it was not.
 
 The five original style documents are included byte-for-byte and should not be edited or silently replaced during routine use.

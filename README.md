@@ -14,7 +14,6 @@
 | 치비애니 | [치비애니.md](skills/nokryong-art-style/styles/치비애니.md) |
 | 흑백망가 | [흑백망가.md](skills/nokryong-art-style/styles/흑백망가.md) |
 
-캐릭터 프롬프트는 포함하지 않습니다.
 
 ## 작동 방식
 
