@@ -13,6 +13,9 @@ EXPECTED={
     '일상웹툰.md': 'c3b12cfcfa298d2efab90c5f42f87c53da8bab550b5f8de91a7ac6ebf7425a33',
     '카툰애니.md': '66c00119583a4d58aa8d999f724063ecd5166ba41f9a67861ac187f98b574515',
     '팬아트애니.md': 'c3b02ae2159f3b66bfed2887eb43bc1897187992a2f6b7db3dd9e44a75656027',
+    '러프애니.md': 'b7e7989b1e814a664b3e38b41704e3d1001d9a12df7516ee3bbcf84495b3e92c',
+    '데포망가.md': '86af18d5a58dbaab9a90a8834d18cdda675f68afaa36a038fb4c8ee8e3804772',
+    '무테애니.md': '7ca0448c88fd1f25a4411dde02325aa58b5f3e886a614715af44dd3edff059f3',
 }
 actual={p.name for p in STYLE_DIR.glob("*.md")}
 assert actual==set(EXPECTED), (actual, set(EXPECTED))

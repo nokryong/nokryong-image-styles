@@ -1,6 +1,6 @@
 interface:
   display_name: "녹용화풍"
-  short_description: "원본 화풍 8종을 정확히 선택"
+  short_description: "원본 화풍 11종을 정확히 선택"
   default_prompt: "인디망가 화풍으로 밤의 편의점 앞에 서 있는 인물을 그려줘."
 policy:
   allow_implicit_invocation: true
