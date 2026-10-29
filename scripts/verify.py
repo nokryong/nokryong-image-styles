@@ -15,7 +15,6 @@ EXPECTED={
     '치비애니.md': '62780c9818a24e6f89785c61e067ce6824fbee6e1a8e764e840b52728df382f8',
     '러프애니.md': 'e0914a370d2df9ecaabcaf711b9f0e8ae5b326529133bc7d67263cb9b4eb1d2a',
     '무테애니.md': '10bd2733a11ba78b4685a426f54ee03ff9a3a1aeb4498e22fbe50608ab1604bb',
-    '붓애니.md': 'ac0bb69b5aa887964bf1bb01ff76541d13838c0c329506feb53a69e37e940992',
 }
 actual={p.name for p in STYLE_DIR.glob("*.md")}
 assert actual==set(EXPECTED), (actual, set(EXPECTED))
