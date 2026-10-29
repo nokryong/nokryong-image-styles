@@ -1,6 +1,6 @@
 ---
 name: nokryong-art-style
-description: "Use this skill when creating, editing, comparing, or choosing images in the user-authored 녹용화풍 art styles: 아마추어웹툰, 인디망가, 잉크애니, 치비애니, 흑백망가, 일상웹툰, 카툰애니, 팬아트애니, 러프애니, 데포망가, 무테애니. Before generating, read the entire original Markdown source for the requested style. The art-style source takes priority over generic defaults and illustrative references."
+description: "Use this skill when creating, editing, comparing, or choosing images in the user-authored 녹용화풍 art styles: 아마추어웹툰, 인디망가, 잉크애니, 치비애니, 흑백망가, 일상웹툰, 카툰애니, 팬아트애니, 러프애니, 붓애니, 무테애니. Before generating, read the entire original Markdown source for the requested style. The art-style source takes priority over generic defaults and illustrative references."
 ---
 
 # 녹용화풍 — original-source art style selector
@@ -20,7 +20,7 @@ This skill includes **exactly eleven unmodified source style prompts**. The bund
 | 카툰애니 | `styles/카툰애니.md` |
 | 팬아트애니 | `styles/팬아트애니.md` |
 | 러프애니 | `styles/러프애니.md` |
-| 데포망가 | `styles/데포망가.md` |
+| 붓애니 | `styles/붓애니.md` |
 | 무테애니 | `styles/무테애니.md` |
 
 Use only styles in this registry, and never substitute a different style for the one the user requested.

@@ -5,17 +5,17 @@ import hashlib
 ROOT=Path(__file__).resolve().parents[1]
 STYLE_DIR=ROOT/"skills"/"nokryong-art-style"/"styles"
 EXPECTED={
-    '아마추어웹툰.md': '30e7af81856bd5f9c3b573e36c020a604d759e54ca7fbc41daa168b32f92500d',
-    '인디망가.md': 'ea6b3c8a0e0d0bc20c93ab2eb9134ba3dbd809ec3db32271fd0a16dd7133afe1',
-    '잉크애니.md': '55fc3175f779631a7bbf52cc89a9114aca6d2f010f9e7dcd1571fb62ab448f6c',
-    '치비애니.md': 'cc897c624e624df5bc9f6761cf21b885a546dfe35948f30931aea9fac3cd8b63',
-    '흑백망가.md': 'a74398f56857d0017791e1233581ff3bd3272fd7a28b32575695ef6a0496e19a',
-    '일상웹툰.md': 'c3b12cfcfa298d2efab90c5f42f87c53da8bab550b5f8de91a7ac6ebf7425a33',
-    '카툰애니.md': '66c00119583a4d58aa8d999f724063ecd5166ba41f9a67861ac187f98b574515',
-    '팬아트애니.md': 'c3b02ae2159f3b66bfed2887eb43bc1897187992a2f6b7db3dd9e44a75656027',
-    '러프애니.md': 'b7e7989b1e814a664b3e38b41704e3d1001d9a12df7516ee3bbcf84495b3e92c',
-    '데포망가.md': '86af18d5a58dbaab9a90a8834d18cdda675f68afaa36a038fb4c8ee8e3804772',
-    '무테애니.md': '7ca0448c88fd1f25a4411dde02325aa58b5f3e886a614715af44dd3edff059f3',
+    '아마추어웹툰.md': 'b0a02f4e7ed891d51b3b7251e63ead6cc7abb438dda6d2e59c99b7630927c568',
+    '인디망가.md': '4db5e483c9fa155f862b855efa60f0dc2bea935986080c7d721d1089097f6076',
+    '일상웹툰.md': 'f9a6411fc8f12b0aa0f86e176902aff62a67e8f6f851ab47e68b300b51be446c',
+    '흑백망가.md': '366268b16a0cb47d2e49908ae1472370f56ace0163291a141465272df22792d6',
+    '잉크애니.md': 'edaee380a746727ed9e7f8c40354757adccf002550907f11bdb05b32ccf38083',
+    '팬아트애니.md': '439ddad6e05506ca4228cb248c22a0bd673fd717fa60af765a926e38ea926da3',
+    '카툰애니.md': 'e379abd27bd6b5b6d24730f52b61a9371b2e4c8a099fa2fd997ea8b923bf2a18',
+    '치비애니.md': '62780c9818a24e6f89785c61e067ce6824fbee6e1a8e764e840b52728df382f8',
+    '러프애니.md': 'e0914a370d2df9ecaabcaf711b9f0e8ae5b326529133bc7d67263cb9b4eb1d2a',
+    '무테애니.md': '10bd2733a11ba78b4685a426f54ee03ff9a3a1aeb4498e22fbe50608ab1604bb',
+    '붓애니.md': 'ac0bb69b5aa887964bf1bb01ff76541d13838c0c329506feb53a69e37e940992',
 }
 actual={p.name for p in STYLE_DIR.glob("*.md")}
 assert actual==set(EXPECTED), (actual, set(EXPECTED))

@@ -19,7 +19,7 @@
 | 카툰애니 | [카툰애니.md](skills/nokryong-art-style/styles/카툰애니.md) |
 | 팬아트애니 | [팬아트애니.md](skills/nokryong-art-style/styles/팬아트애니.md) |
 | 러프애니 | [러프애니.md](skills/nokryong-art-style/styles/러프애니.md) |
-| 데포망가 | [데포망가.md](skills/nokryong-art-style/styles/데포망가.md) |
+| 붓애니 | [붓애니.md](skills/nokryong-art-style/styles/붓애니.md) |
 | 무테애니 | [무테애니.md](skills/nokryong-art-style/styles/무테애니.md) |
 
 
@@ -86,7 +86,7 @@ cp -R nokryong-image-styles/skills/nokryong-art-style ~/.agents/skills/
             ├── 카툰애니.md
             ├── 팬아트애니.md
             ├── 러프애니.md
-            ├── 데포망가.md
+            ├── 붓애니.md
             └── 무테애니.md
 ```
 
