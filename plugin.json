@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "nokryong-image-styles",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Ten original art-style prompts with an exact-source image generation skill.",
   "author": {
     "name": "nokryong"

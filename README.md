@@ -33,6 +33,15 @@
 
 ## 설치
 
+### Codex 마켓플레이스
+
+Codex에서 다음 명령을 순서대로 실행하면 녹용화풍 플러그인을 설치할 수 있습니다.
+
+```bash
+codex plugin marketplace add nokryong/nokryong-image-styles
+codex plugin add nokryong-image-styles@nokryong-art-styles
+```
+
 ### Codex 등 스킬을 지원하는 에이전트
 
 저장소를 복제한 후 `skills/nokryong-art-style` 폴더를 해당 에이전트의 스킬 디렉터리에 복사합니다.
@@ -67,6 +76,11 @@ cp -R nokryong-image-styles/skills/nokryong-art-style ~/.agents/skills/
 ├── README.md
 ├── LICENSE                         # MIT: 스킬 및 소프트웨어 구성요소
 ├── plugin.json
+├── .codex-plugin/
+│   └── plugin.json
+├── .agents/
+│   └── plugins/
+│       └── marketplace.json
 ├── scripts/
 │   └── verify.py                   # 원본 화풍 파일 SHA-256 검사
 └── skills/

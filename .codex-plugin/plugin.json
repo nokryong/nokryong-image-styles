@@ -1,0 +1,21 @@
+{
+  "name": "nokryong-image-styles",
+  "version": "0.5.3",
+  "description": "Ten original art-style prompts with an exact-source image generation skill.",
+  "author": {
+    "name": "nokryong"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "녹용화풍",
+    "shortDescription": "원본 화풍 10종을 정확히 선택",
+    "longDescription": "사용자가 지정한 열 가지 화풍 중 해당 원본 Markdown 문서를 읽고 시각 표현 규칙을 우선 적용하는 이미지 생성 스킬입니다.",
+    "developerName": "nokryong",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "인디망가 화풍으로 밤의 편의점 앞에 서 있는 인물을 그려줘.",
+      "녹용화풍에서 선택 가능한 화풍 열 개를 알려줘."
+    ]
+  }
+}
