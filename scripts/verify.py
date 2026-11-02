@@ -5,6 +5,7 @@ import hashlib
 ROOT=Path(__file__).resolve().parents[1]
 STYLE_DIR=ROOT/"skills"/"nokryong-art-style"/"styles"
 EXPECTED={
+    '디시콘_일반용.md': 'a54256dfe4d64f44ea8a5e668a849aec867d5ee5cc6391b6d3f9a0b395031c9b',
     '아마추어웹툰.md': 'b0a02f4e7ed891d51b3b7251e63ead6cc7abb438dda6d2e59c99b7630927c568',
     '인디망가.md': '4db5e483c9fa155f862b855efa60f0dc2bea935986080c7d721d1089097f6076',
     '일상웹툰.md': 'f9a6411fc8f12b0aa0f86e176902aff62a67e8f6f851ab47e68b300b51be446c',
