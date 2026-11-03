@@ -5,17 +5,13 @@ import hashlib
 ROOT=Path(__file__).resolve().parents[1]
 STYLE_DIR=ROOT/"skills"/"nokryong-art-style"/"styles"
 EXPECTED={
-    '디시콘_일반용.md': 'a54256dfe4d64f44ea8a5e668a849aec867d5ee5cc6391b6d3f9a0b395031c9b',
-    '아마추어웹툰.md': 'b0a02f4e7ed891d51b3b7251e63ead6cc7abb438dda6d2e59c99b7630927c568',
-    '인디망가.md': '4db5e483c9fa155f862b855efa60f0dc2bea935986080c7d721d1089097f6076',
-    '일상웹툰.md': 'f9a6411fc8f12b0aa0f86e176902aff62a67e8f6f851ab47e68b300b51be446c',
-    '흑백망가.md': '366268b16a0cb47d2e49908ae1472370f56ace0163291a141465272df22792d6',
-    '잉크애니.md': 'edaee380a746727ed9e7f8c40354757adccf002550907f11bdb05b32ccf38083',
-    '팬아트애니.md': '439ddad6e05506ca4228cb248c22a0bd673fd717fa60af765a926e38ea926da3',
-    '카툰애니.md': 'e379abd27bd6b5b6d24730f52b61a9371b2e4c8a099fa2fd997ea8b923bf2a18',
-    '치비애니.md': '62780c9818a24e6f89785c61e067ce6824fbee6e1a8e764e840b52728df382f8',
-    '러프애니.md': 'e0914a370d2df9ecaabcaf711b9f0e8ae5b326529133bc7d67263cb9b4eb1d2a',
-    '무테애니.md': '10bd2733a11ba78b4685a426f54ee03ff9a3a1aeb4498e22fbe50608ab1604bb',
+    '아마추어웹툰.md': 'f4a49dddcd9fbe7950911f1cf6d195269b110fc6b3d8bc4e23136dcc95478b5f',
+    '인디망가.md': '0077bdc28c47df5774f8337fe56fc827fa6b2f276caaac71ab765a0393162b4b',
+    '일상웹툰.md': '4f0a2bfbb66949c942cd940129f12489605ec8f6ae721a78ccfa11e3e3be84c0',
+    '팬아트애니.md': '50cf5510166e3242074cd74dc897e0ec8b40366b16df53de76372ff3fcdb0440',
+    '카툰애니.md': 'e23b9876fc3ce090d8baaf2a58d328307c5758d18fa6aa0d064cd8d1544129e1',
+    '무테애니.md': '3ff89ca0755bc51ab8f35e55e73897394890a3397c55a84ec9a6cf44742fa1a7',
+    '러프칼라망가.md': 'ff15536478f2e12d67219b201234e923dbdead90d50d285d82dd594793da9c8b',
 }
 actual={p.name for p in STYLE_DIR.glob("*.md")}
 assert actual==set(EXPECTED), (actual, set(EXPECTED))

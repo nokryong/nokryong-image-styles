@@ -12,16 +12,11 @@
 | --- | --- |
 | 아마추어 웹툰 | [아마추어웹툰.md](skills/nokryong-art-style/styles/아마추어웹툰.md) |
 | 인디망가 | [인디망가.md](skills/nokryong-art-style/styles/인디망가.md) |
-| 잉크애니 | [잉크애니.md](skills/nokryong-art-style/styles/잉크애니.md) |
-| 치비애니 | [치비애니.md](skills/nokryong-art-style/styles/치비애니.md) |
-| 흑백망가 | [흑백망가.md](skills/nokryong-art-style/styles/흑백망가.md) |
 | 일상웹툰 | [일상웹툰.md](skills/nokryong-art-style/styles/일상웹툰.md) |
-| 카툰애니 | [카툰애니.md](skills/nokryong-art-style/styles/카툰애니.md) |
 | 팬아트애니 | [팬아트애니.md](skills/nokryong-art-style/styles/팬아트애니.md) |
-| 러프애니 | [러프애니.md](skills/nokryong-art-style/styles/러프애니.md) |
+| 카툰애니 | [카툰애니.md](skills/nokryong-art-style/styles/카툰애니.md) |
 | 무테애니 | [무테애니.md](skills/nokryong-art-style/styles/무테애니.md) |
-| 디시콘_일반용 | [디시콘_일반용.md](skills/nokryong-art-style/styles/디시콘_일반용.md) |
-
+| 러프칼라망가 | [러프칼라망가.md](skills/nokryong-art-style/styles/러프칼라망가.md) |
 
 ## 작동 방식
 
@@ -66,7 +61,7 @@ cp -R nokryong-image-styles/skills/nokryong-art-style ~/.agents/skills/
 
 ```text
 인디망가 화풍으로 비 내리는 밤거리의 우체통을 그려줘.
-치비애니로 마법서를 들고 달리는 모험가를 그려줘.
+무테애니로 마법서를 들고 달리는 모험가를 그려줘.
 녹용화풍에서 사용할 수 있는 화풍 목록을 알려줘.
 ```
 
@@ -93,15 +88,11 @@ cp -R nokryong-image-styles/skills/nokryong-art-style ~/.agents/skills/
             ├── LICENSE             # CC BY 4.0: 원본 화풍 프롬프트
             ├── 아마추어웹툰.md
             ├── 인디망가.md
-            ├── 잉크애니.md
-            ├── 치비애니.md
-            ├── 흑백망가.md
             ├── 일상웹툰.md
-            ├── 카툰애니.md
             ├── 팬아트애니.md
-            ├── 러프애니.md
+            ├── 카툰애니.md
             ├── 무테애니.md
-            └── 디시콘_일반용.md
+            └── 러프칼라망가.md
 ```
 
 원본 프롬프트 무결성 확인:
@@ -117,7 +108,7 @@ python scripts/verify.py
 | 대상 | 라이선스 |
 | --- | --- |
 | 스킬 및 소프트웨어 구성요소(`SKILL.md`, `plugin.json`, `scripts/` 등) | [MIT](LICENSE) |
-| `skills/nokryong-art-style/styles/*.md` 원본 화풍 프롬프트 11개 | [CC BY 4.0](skills/nokryong-art-style/styles/LICENSE) |
+| `skills/nokryong-art-style/styles/*.md` 원본 화풍 프롬프트 7개 | [CC BY 4.0](skills/nokryong-art-style/styles/LICENSE) |
 
 화풍 프롬프트를 재배포하거나 수정본을 공유할 때에는 원저작자 **nokryong**과 원본 출처, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 라이선스를 표시하고 변경 여부를 밝혀야 합니다. 두 라이선스 모두 상업적 이용을 허용합니다.
 
